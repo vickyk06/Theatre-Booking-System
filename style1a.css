@@ -1,0 +1,75 @@
+body{
+
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+
+.wrapper{
+	background: url(homea.jpg) no-repeat; 
+	background-size: cover;
+	height: 150%;
+	
+
+}
+
+
+.wrapper .center{
+position: absolute;
+top:50%;
+left: 15%;
+transform: translation(-50%, -50%);
+font-family: sans-serif;
+}
+
+.center h1{
+
+color: white;
+font-size: 70px;
+font-weight: bold;
+width: 900px;
+text-align: center;
+}
+
+.center h2{
+
+color: white;
+font-size: 30px;
+font-weight: bold;
+width: 885px;
+margin-top: 7px;
+text-align: center;
+}
+
+.center .buttons{
+
+margin: 35px 360px;
+
+}
+
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background : red;
+	border : 1px solid #cc0000;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: .5s;
+}
+
+.buttons .btn{
+margin-left: 25px;
+}	
+
+
+.buttons button:hover{
+
+	background: #cc0000;
+		
+}
+

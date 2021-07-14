@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>
+Login form design
+</title>
+
+<link rel="stylesheet" type="text/css" href="styleau.css">
+
+<link rel="stylesheet" href="style11.css">
+<body>
+
+
+<div class="wrapper">
+<nav class="navbar">
+<a href="mainhome.html"><img class="logo" src="logo.png" href="mainhome.html"></a>
+<font color="white" size="20" face="vardanas">NOVOX</font>
+<ul>
+<li><img src="logo2.png" class="logo2">
+<a class="active" href="mainhome.html">HOME</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="login.html">USER LOGIN</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="logina.html">ADMIN LOGIN</a></li>
+<li><img src="logo4.png" class="logo2">
+<a href="review.html">REVIEW</a></li>
+<li><img src="logo5.png" class="logo2">
+<a href="login.html">BOOKNOW</a></li>
+
+</ul>
+
+</nav>
+
+
+<div class="hero">
+<h1> <font color="white" ><b>THANKS FOR REGISTERING WITH US</b></font></h1>
+<h1> <font color="white">PLEASE LOG IN</font></h1>
+<div class="form-box">
+	<div class="button-box">
+
+<div id="btn">	</div>
+		<button type="button" class="toggle-button" onclick="login()"><font style="color: white;"> Login</button>	
+		<button type="button" class="toggle-button" onclick="register()"><font style="color: white;">Sign Up</button>
+	</div>
+	<font color="orange" face="verdanas">
+	<form id="login" class="input-group" action="auth.php" method="post">
+	USERNMAE:
+<input type="text" class="input-field" name="user" placeholder="user id" required>  	
+	PASSWORD:
+	<input type="text" class="input-field" name="pass"  placeholder="password" required>
+	</font>
+	<br><br>
+	<button type="submit" class="submit-btn">Log In </button>
+	</form>
+	<font color="orange" face="verdanas">
+	<form id="register" class="input-group" action="" method="">
+	CREATE USERNAME:
+<input type="text" class="input-field" placeholder="create user id" required>  
+		CREATE PASSWORD:
+	<input type="text" class="input-field" placeholder="create password" required>
+	<input type="checkbox" class="check-box"><span>I agree to terms and condition</span>
+	<button type="submit" class="submit-btn">Register </button>
+	</font>
+	</form>
+	</div>
+	
+
+
+</div>
+
+
+</div> 
+
+<script>
+
+var x= document.getElementById("login");
+var y= document.getElementById("register");
+var z= document.getElementById("btn");
+
+function register(){
+
+	x.style.left = "-400px";
+	y.style.left = "50px";
+	z.style.left = "110px";
+	}
+
+	
+	
+function login(){
+
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0px";
+	}  
+
+
+</script>
+</body>
+
+
+
+
+
+</head>

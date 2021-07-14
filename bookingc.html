@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>
+Login form design
+</title>
+
+<link rel="stylesheet" type="text/css" href="stylebookc.css">
+
+<link rel="stylesheet" href="style11.css">
+<body>
+
+
+<div class="wrapper">
+<nav class="navbar">
+<a href="home.html"><img class="logo" src="logo.png" href="home.html"></a>
+<font color="white" size="20" face="vardanas">NOVOX</font>
+<ul>
+<li><img src="logo2.png" class="logo2">
+<a class="active" href="home.html">HOME</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="login.html">USER LOGIN</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="logina.html">ADMIN LOGIN</a></li>
+<li><img src="logo4.png" class="logo2">
+<a href="reviews.php">REVIEW</a></li>
+<li><img src="logo5.png" class="logo2">
+<a href="bookingc.html">BOOKNOW</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero">
+<br>
+<font color="white" face="verdanas">
+	<h1 align="center">BOOKING MY PLAY (1/2)</h3>
+	<h2 align="center">CUSTOMER DETAILS</h3>
+	<h3 align="center">DEAR CUSTOMER,PLEASE ENTER THE REQUESTED DETAILS</h3>
+	</font>
+<div class="form-box">
+	<div class="button-box">
+<div id="btn">	</div>
+		<button type="button" class="toggle-button" onclick="login()"><font style="color: white;"> NEW CUSTOMER</button>	
+		<button type="button" class="toggle-button" onclick="register()"><font style="color: white;">RECENT CUSTOMER</button>
+	</div>
+	<font color="red" face="copperplate">
+	<form id="login" class="input-group" action="bookingnc.php" method="post">
+	ENTER USERNMAE:
+<input type="text" class="input-field" name="user" placeholder="user id" required>  	
+	ENTER CUSTOMER NAME:
+	<input type="text" class="input-field" name="cname"  required>
+	ENTER AGE:
+<input type="text" class="input-field" name="age" p required>  	
+	ENTER PHONENO:
+	<input type="text" class="input-field" name="phoneno"  required>
+	ENTER EMAIL:
+	<input type="email" class="input-field" name="email"  required>
+	</font>
+	<br>
+	<button type="submit"  name="submit" class="submit-btn">PROCEED TO PLAY SELECTION  </button>
+	</form>
+	<font color="red" face="verdanas">
+	<form id="register" class="input-group" action="bookshowc.php" method="post">
+	ENTER USERNAME:
+<input type="text" class="input-field" name="cuser"  required>  
+		<br>
+	<button type="submit" name="submit1" class="submit-btn">PROCEED TO PLAY SELECTION </button>
+	</font>
+	</form>
+	</div>
+	
+
+
+</div>
+
+
+</div> 
+
+<script>
+
+var x= document.getElementById("login");
+var y= document.getElementById("register");
+var z= document.getElementById("btn");
+
+function register(){
+
+	x.style.left = "-700px";
+	y.style.left = "100px";
+	z.style.left = "210px";
+	}
+	
+	
+function login(){
+
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0px";
+	}  
+
+
+</script>
+</body>
+
+
+
+
+
+</head>

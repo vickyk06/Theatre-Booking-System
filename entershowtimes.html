@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>
+Login form design
+</title>
+
+<link rel="stylesheet" type="text/css" href="styleenter2.css">
+
+<link rel="stylesheet" href="style11.css">
+<body>
+<body>
+<div class="wrapper">
+<nav class="navbar">
+<a href="mainhome.html"><img class="logo" src="logo.png" href="mainhome.html"></a>
+<font color="white" size="20" face="vardanas">NOVOX</font>
+<ul>
+<li><img src="logo2.png" class="logo2">
+<a class="active" href="homea.html">HOME</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="login.html">USER LOGIN</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="logina.html">ADMIN LOGIN</a></li>
+
+<li><img src="logo5.png" class="logo2">
+<a href="login.html">BOOKNOW</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+<div class="hero">
+<br><br>
+<br><br>
+<font color="yellow" face="verdanas">
+	<h1 align="center">ENTER PLAY SHOWTIMES</h1>
+	<h3 align="center">Please enter each showtime as indivigual entry for a particular play</h3>
+</font>
+<div class="form-box">
+
+	<font color="orange" face="verdanas">
+	<form id="login" class="input-group" action="insertshowtimes2.php" method="post" >
+	PLAYID:
+	<input type="text" class="input-field" name="pids" required>
+	HALL NO:
+	<input type="text" class="input-field" name="hno"  required>
+	
+	SHOW TIME:
+<input type="TIME" class="input-field" name="stime" required>  <br><br>	
+	HALL TYPE:
+
+	<select id="hallt" name="htype" form="login">
+  <option value="premium">Premium</option>
+  <option value="silver">Silver</option>
+  <option value="max">Max</option>
+  <option value="gold">Gold</option>
+   <option value="7star">7star</option>
+</select>
+<br><br>
+	CAPACITY:
+	<input type="text" class="input-field" name="cap"  required>
+
+	<br><br>
+	<button type="submit" class="submit-btn" name="submit" >submit </button>
+	</form>
+	
+
+
+</div>
+
+
+</div> 
+
+
+
+
+
+</body>
+
+
+
+
+
+</head>

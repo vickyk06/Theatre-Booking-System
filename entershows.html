@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>
+Login form design
+</title>
+
+<link rel="stylesheet" type="text/css" href="styleenter.css">
+
+<link rel="stylesheet" href="style11.css">
+<body>
+<div class="wrapper">
+<nav class="navbar">
+<a href="mainhome.html"><img class="logo" src="logo.png" href="mainhome.html"></a>
+<font color="white" size="20" face="vardanas">PET LOVER</font>
+<ul>
+<li><img src="logo2.png" class="logo2">
+<a class="active" href="homea.html">HOME</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="login.html">USER LOGIN</a></li>
+<li><img src="logo3.png" class="logo2">
+<a href="logina.html">ADMIN LOGIN</a></li>
+
+<li><img src="logo5.png" class="logo2">
+<a href="login.html">BOOKNOW</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="hero">
+<br><br>
+<br><br>
+<font color="black" face="verdanas">
+	<h1 align="center">ENTER PLAY DETAILS</h1>
+	</font>
+<div class="form-box">
+
+	<font color="orange" face="verdanas">
+	<form id="login" class="input-group" action="insertshows2.php" method="post" enctype="multipart/form-data">
+	PLAYID:
+	<input type="text" class="input-field" name="pids" required>
+	PLAY NAME:
+	<input type="text" class="input-field" name="pname"  required>
+	PLAY DESCRIPTION:
+<textarea rows="4" cols="40" name="pdesc" form="login">
+Enter description here...</textarea>
+	GENRE:
+<input type="text" class="input-field" name="genre" required>  	
+	DURATION:
+	<input type="text" class="input-field" name="duration" required>
+	LANGUAGE:
+	<input type="text" class="input-field" name="language"  required>
+	DIR:
+	<input type="text" class="input-field" name="dir" required>
+	ACTOR:
+	<input type="text" class="input-field" name="actor" required>
+	ACTRESS:
+	<input type="text" class="input-field" name="actress" required>
+	UPLOAD POSTER:
+	<input type="file" name="image">
+	</font>
+	<br><br>
+	<button type="submit" class="submit-btn" name="submit" >submit </button>
+	</form>
+	
+
+
+</div>
+
+
+</div> 
+
+
+
+
+var x= document.getElementById("login");
+var y= document.getElementById("register");
+var z= document.getElementById("btn");
+
+function register(){
+
+	x.style.left = "-400px";
+	y.style.left = "50px";
+	z.style.left = "110px";
+	}
+	
+	
+function login(){
+
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0px";
+	}  
+
+
+</script>
+</body>
+
+
+
+
+
+</head>
